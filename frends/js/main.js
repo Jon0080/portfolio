@@ -34,6 +34,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 // ページ内リンク
 $(function(){
   $('.s_05 a.close_btn').click(function() {

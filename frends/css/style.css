@@ -214,9 +214,9 @@ img {
 }
 
 .p_detail {
-  width:6 0%;
   text-align: left;
   line-height: 2em;
+  min-width: 250px;
 }
 
 .p_title {
@@ -247,7 +247,7 @@ img {
   margin: 0 auto;
   justify-content: center;
   text-align: left;
-  max-width: 800px;
+  width:100%;
   line-height: 1.5;
   margin:5rem auto;
 }
@@ -377,21 +377,36 @@ img {
   display: flex;
   flex-direction: column;
 }
-.section_title{
-    display: flex;
+.section_title {
+  display: flex;
+  align-items: center; /* 垂直方向の中央揃え */
+  gap: 10px; /* 文字とラインの間隔 */
+  padding-top: 5rem;
 }
-.section_title P{
-    padding-top: 1em;
+
+.section_title p {
   color: #00C2AA;
   font-size: 3.5em;
   font-family: "Oxanium", sans-serif;
-  font-weight: 200;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
 }
-.section_title_line{
-    background-color: #00C2AA;
-    width: 5%;
-    height: 2px;
-    
+@media screen and (max-width: 768px) {
+  .section_title p {
+    color: #00C2AA;
+    font-size: 2.5em;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+  }
+}
+.section_title_line {
+  background-color: #00C2AA;
+  width: 7em;
+  max-width: 20%;
+  height: 3px;
 }
 
 #webdesign_section {
@@ -501,41 +516,62 @@ font-size: clamp(10px, 1em, 14px);
 
 
 /*---------------------------illustration↓----------------------------*/
+
+
+
 #illustration_section {
-  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding:2em 1em;
 }
 
 .gallery {
-  columns: 3;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery .active {
-  display: block;
+  padding-top: 4em;
+  column-count: 3; /* PCでは3列 */
+  column-gap: 1rem;
+  margin: 0;
+  list-style: none;
 }
 
 .gallery li {
-  margin-bottom: 20px;
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-.gallery img {
+.gallery img,
+.gallery video {
   width: 100%;
   height: auto;
-  vertical-align: bottom;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-@media only screen and (min-width: 769px) {
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 1024px) {
   .gallery {
-    columns: 3;
+    column-count: 2;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 374x) {
   .gallery {
-    columns: 2;
+    column-count: 1;
   }
 }
+
+
+
+
+
+
+
 
 ul {
   margin: 0;
