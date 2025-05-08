@@ -80,8 +80,9 @@ $(function(){
 // 　スクロールハイライト
 document.addEventListener("DOMContentLoaded", () => {
   const sections = [
-    { id: "illustration_section", btn: "illustration_btn" },
     { id: "webdesign_section", btn: "webdesign_btn" },
+    { id: "otherdesign_section", btn: "otherdesign_btn" },
+    { id: "illustration_section", btn: "illustration_btn" },
   ];
 
   const observer = new IntersectionObserver(

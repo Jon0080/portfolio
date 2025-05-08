@@ -246,10 +246,15 @@ img {
   padding:5rem 3rem;
   margin: 0 auto;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   width:100%;
   line-height: 1.5;
   margin:5rem auto;
+}
+.p_youyaku P{
+  text-align: left;
+  max-width: 700px;
+  margin:0 auto;
 }
 
 .youyakutitle{
@@ -372,7 +377,6 @@ img {
   width: 100%;
 }
 .w_content {
-   width: min(100%, 1080px); 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -410,9 +414,9 @@ img {
 }
 
 #webdesign_section {
+       width: min(100%, 1080px); 
   position: relative;
   text-align: center;
-  width: 100%;
   margin-bottom: 5rem;
   margin: 0 auto;
   justify-content: center;
@@ -515,12 +519,19 @@ font-size: clamp(10px, 1em, 14px);
 
 
 
-/*---------------------------illustration↓----------------------------*/
+/*---------------------------otherdesign&illustration↓----------------------------*/
 
 
-
+#otherdesign_section {
+  width: min(100%, 1280px);
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding:2em 1em;
+}
 #illustration_section {
-  max-width: 1800px;
+  width: min(100%, 1280px);
+  max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
   padding:2em 1em;
@@ -528,7 +539,7 @@ font-size: clamp(10px, 1em, 14px);
 
 .gallery {
   padding-top: 4em;
-  column-count: 3; /* PCでは3列 */
+  column-count: 3;
   column-gap: 1rem;
   margin: 0;
   list-style: none;
@@ -553,7 +564,6 @@ font-size: clamp(10px, 1em, 14px);
   transform: scale(1.05);
 }
 
-/* レスポンシブ調整 */
 @media (max-width: 1024px) {
   .gallery {
     column-count: 2;
