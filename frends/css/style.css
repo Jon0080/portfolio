@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   color: #363636;
   z-index: -10;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -223,7 +224,7 @@ img {
   margin-left: 5%;
   padding: 0 1em;
   color: #00C2AA;
-  font-size: calc(1.5em + 0.5vw);
+  font-size: calc(1em + 0.5vw);
   font-family: "Oxanium", sans-serif;
   font-weight: 100;
 }
@@ -408,7 +409,7 @@ img {
 }
 .section_title_line {
   background-color: #00C2AA;
-  width: 7em;
+  width: 1em;
   max-width: 20%;
   height: 3px;
 }
@@ -430,10 +431,10 @@ img {
   align-items: center;
   margin: auto 0;
   max-width: 600px;
+  width: 80%;
 }
 .item2 {
      width: min(100%, 700px);
-    min-width: 500px;
   border-radius: 3px;
   display: block;
   position: relative;
@@ -524,14 +525,12 @@ font-size: clamp(10px, 1em, 14px);
 
 #otherdesign_section {
   width: min(100%, 1280px);
-  max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
   padding:2em 1em;
 }
 #illustration_section {
   width: min(100%, 1280px);
-  max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
   padding:2em 1em;
@@ -543,12 +542,12 @@ font-size: clamp(10px, 1em, 14px);
   column-gap: 1rem;
   margin: 0;
   list-style: none;
+    width: 100%;
 }
 
 .gallery li {
   break-inside: avoid;
   margin-bottom: 1rem;
-  width: 100%;
 }
 
 .gallery img,
@@ -567,12 +566,16 @@ font-size: clamp(10px, 1em, 14px);
 @media (max-width: 1024px) {
   .gallery {
     column-count: 2;
+            width: 100%;
+
   }
 }
 
 @media (max-width: 374x) {
   .gallery {
     column-count: 1;
+            width: 100%;
+
   }
 }
 
