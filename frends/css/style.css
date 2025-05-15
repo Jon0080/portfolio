@@ -597,12 +597,18 @@ ul {
 
 
 footer {
-  text-align: center;
-  margin: 10em auto;
-  padding: 3em auto;
-  height: 500px;
-  background-color: F7F7F7;
+  padding-top: 2em;
+  margin: 10em auto 0;
+  height: 300px;
+  background-color: #363636;
 }
+footer li{
+  text-align: right;
+  font-size: (calc 1em + 0.2vw);
+  color:#fff;
+  padding-right: 1%;
+}
+
 
 .section_line {
   text-align: center;
